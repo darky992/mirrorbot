@@ -48,8 +48,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
-    buttons.buildbutton("Owner", "https://www.github.com/anasty17")
+    buttons.buildbutton("𝐉𝐎𝐈𝐍", "https://t.me/Deadsec_raj")
+    buttons.buildbutton("𝐎𝐖𝐍𝐄𝐑", "https://t.me/deadsec0_0darky")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -203,6 +203,4 @@ def main():
     signal(SIGINT, exit_clean_up)
 
 app.start()
-main()
-
-main_loop.run_forever()
+main().run_forever()
